@@ -344,8 +344,10 @@ client.on('message', message => {
       message.channel.send(helpEmbed);
     }
 });
-var adminprefix = "a";
+var adminprefix = "1";
 const devs = ['461468630773661699'];
+client.on('message', message => {//Toxic Codesvar adminprefix = "z";
+const devs = ['461468630773661699','4039117545956456'];
 client.on('message', message => {//Toxic Codes
     var argresult = message.content.split(` `).slice(1).join(' ');//Toxic Code
   if (message.content.startsWith(adminprefix + 'setg')) {
@@ -398,9 +400,7 @@ if (message.content.startsWith(adminprefix + 'setavatar')) {//Toxic Codes
   client.user.setAvatar(argresult);
     message.channel.send(`Changing The Avatar To :**${argresult}** `);//Toxic Codes
 }
-});
-
- 
+});//Toxic Codes
 
 
 
